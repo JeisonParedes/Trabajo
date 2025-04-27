@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Robots e Ingenieros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        RoboTech
+        <div>Fecha: <span id="fecha"></span></div>
+    </header>
+
+    <div class="container">
+
+        <!-- Panel de Robots -->
+        <div class="panel">
+            <h2>Nuevo Robot</h2>
+            <div class="formulario">
+                <input type="text" id="nombreRobot" placeholder="Nombre del robot">
+                <input type="text" id="tipoRobot" placeholder="Tipo (industrial, médico, seguridad)">
+                <button onclick="agregarRobot()">Registrar Robot</button>
+            </div>
+            <h1>Lista de Robots</h1>
+            <div class="tarjetas" id="listaRobots"></div>
+        </div>
+
+        <!-- Panel de Ingenieros -->
+        <div class="panel">
+            <h2>Nuevo Ingeniero</h2>
+            <div class="formulario">
+                <input type="text" id="nombreIngeniero" placeholder="Nombre del ingeniero">
+                <input type="text" id="especialidadIngeniero" placeholder="Especialidad">
+                <button onclick="agregarIngeniero()">Registrar Ingeniero</button>
+            </div>
+            <h1>Lista de Ingenieros</h1>
+            <div class="tarjetas" id="listaIngenieros"></div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

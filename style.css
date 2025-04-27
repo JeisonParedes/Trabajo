@@ -1,0 +1,147 @@
+/*  Estilo General */
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff;
+}
+
+/*  Barra Superior  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000000;
+    border-bottom: 2px solid #00ff00;
+}
+
+header h1 {
+    color: #00ff00;
+    font-size: 2em;
+    margin: 0;
+}
+
+header .fecha {
+    color: #00ff00;
+    font-size: 1em;
+}
+
+/*Contenedor Principal*/
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ===== Paneles (Nuevo Robot, Nuevo Ingeniero) ===== */
+.panel {
+    background-color: #111111;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== Títulos de Paneles ===== */
+.panel h2 {
+    color: #00ff00;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* ===== Formulario dentro del panel ===== */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 10px;
+    background-color: #000000;
+    border: 1px solid #00ff00;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #00cc00;
+    outline: none;
+}
+
+/* ===== Botón de registrar en el formulario ===== */
+.formulario button {
+    background-color: #00ff00;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #00cc00;
+}
+
+/* ===== Lista de Tarjetas debajo del formulario ===== */
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== Tarjeta individual ===== */
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Texto dentro de tarjeta */
+.card span {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* ===== Acciones en la tarjeta ===== */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.actions button:hover {
+    color: #ffffff;
+}
+
+/* ===== Responsive para móviles ===== */
+@media (max-width: 768px) {
+    .formulario {
+        flex-direction: column;
+    }
+}
